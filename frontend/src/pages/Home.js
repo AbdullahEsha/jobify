@@ -2,32 +2,19 @@ import React from "react";
 
 export const Home = () => {
   return (
-    <div className="flex flex-col h-full items-center justify-center bg-gray-200 text-gray-700">
-      <div className="flex items-center">
-        <h1 className="text-6xl font-thin tracking-wider">
-          Create React App + Tailwind CSS
-        </h1>
-      </div>
-      <p className="my-6 tracking-wide">
-        Edit <code>src/App.js</code> and save to reload.
-      </p>
-      <div className="mt-6 flex justify-center">
-        <a
-          className="uppercase hover:underline"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <a
-          className="ml-10 uppercase hover:underline"
-          href="https://tailwindcss.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Tailwind
-        </a>
+    <div className="flex flex-col items-center justify-center h-full">
+      <div className="font-bold text-2xl mb-4 shadow-md rounded-lg p-5 border">
+        <h1 className="text-4xl font-bold">Home</h1>
+        <p className="text-2xl mt-4">Welcome to the Home page!</p>
+        <hr className="my-4" />
+        <div className="flex items-center justify-between">
+          <a href="/login" className="text-blue-500 hover:underline text-base">
+            Login
+          </a>
+          <a href="/signup" className="text-blue-500 hover:underline text-base">
+            Signup
+          </a>
+        </div>
       </div>
     </div>
   );

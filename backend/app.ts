@@ -24,7 +24,7 @@ app.use(helmet());
 // CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options.
 app.use(
   cors({
-    origin: ["*"],
+    origin: ["http://localhost:3000", "http://localhost:5000"],
     credentials: true,
   })
 );
@@ -36,7 +36,7 @@ app.use(cookieParser());
 app.use("/api", limiter);
 
 //routes
-app.use("/api/v1", credentialRouter);
+app.use("/api/v1/auth", credentialRouter);
 app.use("/api/v1/user", userRouter);
 
 // test route
